@@ -1,0 +1,23 @@
+[project]
+name = "llm-training"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Islam", email = "60185596+IslamMammadov@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "jupyter",
+    "minsearch",
+    "openai",
+    "python-dotenv",
+    "requests",
+]
+
+[project.scripts]
+llm-training = "llm_training:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
